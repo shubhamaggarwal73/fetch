@@ -4,7 +4,7 @@ const data = {
 };
 
 fetch('https://reqres.in/api/users/2', {
-  method: 'PUT', // or 'PUT'
+  method: 'PATCH', // or 'PUT'
   headers: {
     'Content-Type': 'application/json',
   },

@@ -1,14 +1,10 @@
-const data = {
-    "name": "morpheus",
-    "job": "zion resident"
-};
+const data = { username: 'example' };
 
-fetch('https://reqres.in/api/users/2', {
-  method: 'PUT', // or 'PUT'
+fetch('https://reqres.in/api/users/23', {
+  method: 'GET', // or 'PUT'
   headers: {
     'Content-Type': 'application/json',
-  },
-  body: JSON.stringify(data),
+  }
 })
 .then((response) => response.json())
 .then((data) => {
@@ -17,4 +13,3 @@ fetch('https://reqres.in/api/users/2', {
 .catch((error) => {
   console.error('Error:', error);
 });
-

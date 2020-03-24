@@ -1,8 +1,10 @@
-const data = { username: 'example' };
-
+const data = {
+    "name": "morpheus",
+    "job": "leader"
+} ;
 fetch('https://reqres.in/api/users', {
   method: 'POST', // or 'PUT'
-  headers: {
+  headers: {  
     'Content-Type': 'application/json',
   },
   body: JSON.stringify(data),

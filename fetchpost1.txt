@@ -1,11 +1,10 @@
 const data = {
-    "name": "morpheus",
-    "job": "zion resident"
-};
-
-fetch('https://reqres.in/api/users/2', {
-  method: 'PUT', // or 'PUT'
-  headers: {
+    "email": "eve.holt@reqres.in",
+    "password": "pistol"
+} ;
+fetch('https://reqres.in/api/register', {
+  method: 'POST', // or 'PUT'
+  headers: {  
     'Content-Type': 'application/json',
   },
   body: JSON.stringify(data),
@@ -17,4 +16,3 @@ fetch('https://reqres.in/api/users/2', {
 .catch((error) => {
   console.error('Error:', error);
 });
-
